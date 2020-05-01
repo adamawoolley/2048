@@ -1,0 +1,57 @@
+<!-- TODO
+make animation for movement
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <audio id="pop">
+        <source src="pop.mp3" type="audio/mpeg">
+        <source src="pop.wav" type="audio/wav">
+    </audio>
+    <div class="container">
+        
+        <div class="heading">
+            <h1 class="title">2048</h1>
+            <div class="score-container">
+                <div id="high-score">
+                    <span class="score-heading">BEST</span>
+                    <span id="high">0</span>
+                </div>
+                <div id="score-container">
+                    <span class="score-heading">SCORE</span>
+                    <span id="score">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="above-game noselect">
+            <div id="new-game" class="button">
+                New Game
+            </div>
+            <span id="instructions">
+                Join the numbers and get to the <strong>2048 tile!</strong>
+            </span>
+        </div>
+
+        <div class="game-container noselect">
+            <div id="end">
+                <h1 class="title" id="game-over">Game over!</h1>
+                <div id="end-buttons">
+                    <a id="keep-going" class="button">Keep going</a>
+                    <a id="restart" class="button">Try again</a>
+                </div>
+            </div>
+        
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
